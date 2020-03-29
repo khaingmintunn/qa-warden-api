@@ -1,0 +1,15 @@
+test:
+  host: smtp.gmail.com
+  port: 587
+  address: qawarden.mm.test
+  password: password
+dev:
+  host: smtp.gmail.com
+  port: 587
+  address: qawarden.mm.dev
+  password: password
+prod:
+  host: smtp.gmail.com
+  port: 587
+  address: qawarden.mm.prod
+  password: password

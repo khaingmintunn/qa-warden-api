@@ -1,0 +1,51 @@
+{
+  "name": "qa-warden-api",
+  "version": "0.0.1",
+  "description": "questions and answers score board",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^3.13.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.6",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.3.1",
+    "nodemon": "^1.19.4",
+    "uuid": "^3.3.3",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test nodemon server.js --ext js",
+    "dev": "cross-env NODE_ENV=dev nodemon server.js --ext js",
+    "prod": "cross-env NODE_ENV=prod nodemon server.js --ext js",
+    "import:test": "cross-env NODE_ENV=test node import/index.js",
+    "import:dev": "cross-env NODE_ENV=dev node import/index.js",
+    "import:prod": "cross-env NODE_ENV=prod node import/index.js",
+    "format": "prettier --write **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaingmintunn/qa-warden-api.git"
+  },
+  "author": "khaingmintun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khaingmintunn/qa-warden-api/issues"
+  },
+  "homepage": "https://github.com/khaingmintunn/qa-warden-api#readme"
+}

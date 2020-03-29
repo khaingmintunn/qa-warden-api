@@ -1,0 +1,18 @@
+[
+    {
+        "qa_id": "",
+        "title": "",
+        "question": "",
+        "answer_list": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": ""
+        },
+        "answer_no": 1,
+        "init_correct_user_id": "",
+        "created_user_id": "",
+        "created_at": "",
+        "updated_at": ""
+    }
+]

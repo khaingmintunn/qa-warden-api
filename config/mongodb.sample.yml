@@ -1,0 +1,9 @@
+test:
+  url: mongodb://localhost:27017/qa-warden-test
+  secret: secret-test
+dev:
+  url: mongodb://localhost:27017/qa-warden-dev
+  secret: secret-dev
+prod:
+  url: mongodb://localhost:27017/qa-warden-prod
+  secret: secret-prod
